@@ -1,0 +1,50 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+header p {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#survey-fields {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0;
+    min-width: 100%;
+}
+
+fieldset label:hover {
+    font-weight: bold;
+}
+
+#submit {
+    margin: auto;
+    background-color: var(--background-c, lightgray);
+    border-radius: 8px;
+    padding: 5px 12px 5px 12px;
+    margin-top: 5px;
+    font-size: 85%;
+}

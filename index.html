@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<header id="title">
+<title>Survey Form</title>
+<link rel="stylesheet" href="style.css">
+<p>This is a survey form</Form></p>
+</header>
+
+<body>
+    <form action="" id="survey-form" method="GET">
+        <section id="survey-fields">
+        <!--User Identity Input-->
+            <label for="email">Enter your email:</label>
+            <input type="email" for="email" id="email" placeholder="John.Doe@gmail.com" required>
+            <label for="name">Enter your name:</label>
+            <input type="text" for="name" id="name" placeholder="John Doe" required>
+            <label for="number">Enter your number:</label>
+            <input type="number" for="number" id="number" placeholder="111-111-1111" minlength="0" maxlength="12" required>
+        
+        <!--Dropdown Config-->
+            <label for="dropdown">Choose One:</label>
+            <select id="dropdown" form="survey-form">
+                <option value="" disabled selected>Select An Option</option>
+                <option value="name">Name</option>
+                <option value="email">Email</option>
+                <option value="number">Number</option>
+            </select>
+
+        <!--Checkbox Config-->
+        <fieldset>
+            <legend>Favorite Foods (<em>Select All That Apply</em>)</legend>
+            <label for="taco"><input id="taco" type="checkbox">Taco</label>
+            <label for="pizza"><input id="pizza" type="checkbox">Pizza</label>
+            <label for="Aloo Gobi Masala"><input id="Aloo Gobi Masala" type="checkbox">Aloo Gobi Masala</label>
+            <label for="Sambar"><input id="Sambar" name="Sambar" type="checkbox">Sambar</label>
+            <label for="other"><input id="other" name="other" type="checkbox">Other <input id="other_text" name="other_text" type="text"></label>
+        </fieldset>
+
+        <!--Additional Comments-->
+        <label for="comments">Feedback</label>
+        <textarea placeholder="Enter Feedback Here..."></textarea>
+
+        <!--Button Config-->
+            <input type="submit" type="button" value="Submit">
+        </section>
+    </form>
+</body>
+
+</html>
